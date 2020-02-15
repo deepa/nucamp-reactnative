@@ -1,0 +1,8 @@
+
+> fsevents@1.2.11 install /Users/deepa/projects/nucamp/4-React-Native/nucampsite/node_modules/fsevents
+> node-gyp rebuild
+
++ react-native-vector-icons@6.6.0
+added 15 packages from 6 contributors and audited 71278 packages in 5.49s
+found 4 low severity vulnerabilities
+  run `npm audit fix` to fix them, or `npm audit` for details

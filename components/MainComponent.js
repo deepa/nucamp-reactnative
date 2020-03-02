@@ -340,7 +340,6 @@ class Main extends Component {
             ToastAndroid.LONG
           );
     });
-
     this.unsubscribeNetInfo = NetInfo.addEventListener(connectionInfo => {
       this.handleConnectivityChange(connectionInfo);
     });
@@ -370,6 +369,19 @@ class Main extends Component {
       ? Alert.alert('Connection change:', connectionMsg)
       : ToastAndroid.show(connectionMsg, ToastAndroid.LONG);
   };
+
+  render() {
+    return (
+      <View
+        style={{
+          flex: 1,
+          paddingTop: Platform.OS === 'ios' ? 0 : Expo.Constants.statusBarHeight
+        }}
+      >
+        <MainNavigator />
+      </View>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
